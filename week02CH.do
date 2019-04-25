@@ -44,7 +44,7 @@ distinct pid // there are 177 participants, with multiple rows per participant (
 use "`datapath'\dataset03_clin.dta", clear
 distinct pid // there are 111 participants, with multiple rows per participant (4495 in total)
 
-** -----------------------------------------------------------------------------
+/** -----------------------------------------------------------------------------
 ** CH notes: I want to end up with a dataset with 1 row per participant per
 ** time point. The static datasets contain different participants, so should be
 ** appended. The clin and haem datasets contain information on the participants

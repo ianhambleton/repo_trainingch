@@ -133,7 +133,7 @@ use `met04', clear
                 name(temperature_quarter)
             ;
 #delimit cr
-
+/*
 
 ** Tabulate and graph monthly temperatures (minimally formatted graphic)
 use `met03', clear
@@ -175,7 +175,7 @@ qui tabstat avt mint maxt , by(tweek) stat(mean) format(%9.1f)
 #delimit cr
 
 
-*/
+
 
 
 ** ************************************************************

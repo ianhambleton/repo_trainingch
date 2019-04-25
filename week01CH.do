@@ -34,7 +34,7 @@ use "`datapath'\dataset01_meteorology.dta", clear
 numlabel, add mask("#")
 tab measure
 
-**only using rainfall so am getting rid of other variables
+/**only using rainfall so am getting rid of other variables
 drop if measure !=5 // note there are no values for 2000-2002
 
 
@@ -152,7 +152,7 @@ restore
 ** Using DATASET 2 (dataset02_asthma.dta), do the following:
 ** Tabulate the number of annual paediatric events along with an annual summary of dust levels
 **----------------------------------------------------
-*/
+*
 ** load dataset
 use "`datapath'\dataset02_asthma.dta", clear
 
