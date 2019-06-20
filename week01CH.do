@@ -34,7 +34,7 @@ use "`datapath'\dataset01_meteorology.dta", clear
 numlabel, add mask("#")
 tab measure
 
-/**only using rainfall so am getting rid of other variables
+**only using rainfall so am getting rid of other variables
 drop if measure !=5 // note there are no values for 2000-2002
 
 
@@ -106,7 +106,7 @@ label define quarter 1 "Q1 2003" 2 "Q2 2003" 3 "Q3 2003" 4 "Q4 2003" 5 "Q1 2004"
 
 label values quarter quarter
 
-** collapse dataset so that all the rainfall in each quarter is 1 row
+/** collapse dataset so that all the rainfall in each quarter is 1 row
 preserve
     collapse (sum) value, by(quarter)
     list
