@@ -53,10 +53,10 @@ forvalues x = 10(1)15 {
 
 label define behav 0 "not true at all" 1 "somewhat true" 2 "very true"
 
-*use macro to define behavioural variables, then apply label using a loop 
+*use macro to define behavioural variables, then apply label using a loop  
 local var strength* aggress*
 
-foreach x in `var' { 
+foreach x in `var' {
     label values `x' behav
 }
 
