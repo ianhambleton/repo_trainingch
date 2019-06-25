@@ -15,9 +15,10 @@ set linesize 80
 
 ** Set working directories: this is for DATASET and LOGFILE import and export
 ** DATASETS to encrypted SharePoint folder
-local datapath "X:\The University of the West Indies\DataGroup - repo_data\data_statatrainingdev"
+local datapath "X:\The University of the West Indies\DataGroup - repo_data\data_statatraining"
 ** LOGFILES to unencrypted OneDrive folder
-local logpath X:\OneDrive - The University of the West Indies\repo_datagroup\repo_statatrainingdev
+local logpath X:\OneDrive - The University of the West Indies\repo_datagroup\repo_trainingch
+
 
 ** Close any open log fileand open a new log file
 capture log close
