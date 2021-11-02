@@ -205,4 +205,3 @@ graph twoway (connected _le year if measure==7 & type==15) (connected _le year i
             ;
 #delimit cr 
 
-

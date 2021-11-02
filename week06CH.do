@@ -25,10 +25,17 @@ log using "`logpath'\week06_CH", replace
 
 use "`datapath'\dataset06_sabehealth.dta", replace
 
-** Chi-squared
-#delimit ;
-        local sabehealth "C01 C02 C03 C04 C05 C06 C07 C08 C09 C10 C11
-        C13A C13B C13C C13D C13E C13F C13G C13H C13I C13J C13K
-        C15 C16 C22A C22B C22C C22D C22E C22F C22G C22H C22I";
-#delimit cr
+** -----------------------------------------------------------------------------
+** INSTRUCTIONS
+** Using DATASET 6 (dataset06_sabehealth.dta),
+** Two-way tabulations of health and gender. Using the variable SEX, for each categorical variable that reports an aspect of health or nutrition, perform a 2-way tabulation and chi-squared test 
+** (sex by health measure) in Stata. You should end up with 33 two-way tables and chi-squared tests.
+** -----------------------------------------------------------------------------
+
+local hmeas C01 C02 C03 C04 C05 C06 C07 C08 C09 C10 C11 C13A C13B C13C C13D C13E C13F C13G C13H C13I C13J C13K C15 C16 C22A C22B C22C C22D C22E C22F C22G C22H C22I
+
+foreach x in `hmeas'{
+        tab `x' SEX, col chi 
+}
+
 
